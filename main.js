@@ -4,10 +4,12 @@ function zmenaPozadi(){
     text = document.querySelector('.odstavec');
     text.classList.toggle('tridaOdsatvce');
 }
+let velikostPisma = 16;
 function zmenaVelikosti(event){
    let pismo;
    pismo = document.querySelector('.odstavec')
-   pismo.style.fontSize = '+ 1px'
+   velikostPisma = velikostPisma + 1;
+   pismo.style.fontSize = velikostPisma + "px"
 }
 
 let audio = document.querySelector('.zvuk')
